@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Revature\\201019-Uta-UiPath\\training-code\\1-CSharp\\helloWorld\\helloWorld.csproj": {}
+    "/Users/brianfoley/Desktop/FoleyBrian-Code/helloworld/helloWorld.csproj": {}
   },
   "projects": {
-    "C:\\Revature\\201019-Uta-UiPath\\training-code\\1-CSharp\\helloWorld\\helloWorld.csproj": {
+    "/Users/brianfoley/Desktop/FoleyBrian-Code/helloworld/helloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Revature\\201019-Uta-UiPath\\training-code\\1-CSharp\\helloWorld\\helloWorld.csproj",
+        "projectUniqueName": "/Users/brianfoley/Desktop/FoleyBrian-Code/helloworld/helloWorld.csproj",
         "projectName": "helloWorld",
-        "projectPath": "C:\\Revature\\201019-Uta-UiPath\\training-code\\1-CSharp\\helloWorld\\helloWorld.csproj",
-        "packagesPath": "C:\\Users\\PushpinderKaur\\.nuget\\packages\\",
-        "outputPath": "C:\\Revature\\201019-Uta-UiPath\\training-code\\1-CSharp\\helloWorld\\obj\\",
+        "projectPath": "/Users/brianfoley/Desktop/FoleyBrian-Code/helloworld/helloWorld.csproj",
+        "packagesPath": "/Users/brianfoley/.nuget/packages/",
+        "outputPath": "/Users/brianfoley/Desktop/FoleyBrian-Code/helloworld/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PushpinderKaur\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/brianfoley/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -50,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
         }
       }
     }

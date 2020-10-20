@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YyT6bqMo4qsoj52sueO6H9MAr2jRdQmOMj3AqayhoWud8a8vQ7ldXuLsHBuQkrDQA7CXpAhac4m/H2NqaZZvhg==",
+  "dgSpecHash": "TZQoYyolWbZhZ1c/l1af3j4k9e7In3EJPIvES4u+IygTCGy1mYSEghNI2XfFxgXcWl6fdF8QJQneyjpE0Dan8A==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\201019-Uta-UiPath\\training-code\\1-CSharp\\helloWorld\\helloWorld.csproj",
+  "projectFilePath": "/Users/brianfoley/Desktop/FoleyBrian-Code/helloworld/helloWorld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
