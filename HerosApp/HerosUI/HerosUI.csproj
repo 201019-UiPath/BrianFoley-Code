@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\herosLib\herosLib.csproj" />
+    <ProjectReference Include="..\HerosLib\HerosLib.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

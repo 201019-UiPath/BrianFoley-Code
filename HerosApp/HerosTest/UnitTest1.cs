@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace herosTest
+namespace HerosTest
 {
     public class UnitTest1
     {
