@@ -3,6 +3,9 @@
 namespace herosLib
 {
     // default access modifier: internal
+
+    #region old way of creating class members
+    /*
     public class Hero
     {
         
@@ -26,4 +29,17 @@ namespace herosLib
         }
 
     }
+    */
+    #endregion
+
+    #region Modern way of creating class members
+    public class Hero {
+        public int Id {get; set;}
+        public string Name{get; set;}
+        public string[] superPowers = new string[10];
+        //jagged array
+        public int[][] ja=new int[3][];
+ 
+    }
+    #endregion
 }
