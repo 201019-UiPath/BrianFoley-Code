@@ -30,13 +30,13 @@ namespace herosUI
             // Console.Write("Enter the first super power: ");
             // obj.superPowers[0] = Console.ReadLine();
             // Console.Write($"{obj.Id} {obj.Name} {obj.superPowers[0]}");
-            obj.ja[0] = new int[2]; // first column
-            obj.ja[1] = new int[3]; // second column
-            obj.ja[2] = new int[2]; // third column
-            obj.ja[0][0] = 10;
-            obj.ja[1][2] = 15;
-            Console.WriteLine(obj.ja.Length);
-            Console.WriteLine();
+            // obj.ja[0] = new int[2]; // first column
+            // obj.ja[1] = new int[3]; // second column
+            // obj.ja[2] = new int[2]; // third column
+            // obj.ja[0][0] = 10;
+            // obj.ja[1][2] = 15;
+            // Console.WriteLine(obj.ja.Length);
+            // Console.WriteLine();
 
             // for(int i = 0; i < obj.ja.Length; i++) {
             //     for(int j = 0; j < obj.ja[i].Length; j++) {
@@ -44,15 +44,33 @@ namespace herosUI
             //     }
             // }
 
-            foreach (var rows in obj.ja) {
+            // foreach (var rows in obj.ja) {
         
-                foreach (var item in rows) {
-                    Console.Write($"{item} ");
-                }
-                 Console.WriteLine();
-            }
+            //     foreach (var item in rows) {
+            //         Console.Write($"{item} ");
+            //     }
+            //      Console.WriteLine();
+            // }
             #endregion
 
+            #region collections
+            
+            // foreach(var superPower in obj.GetSuperPowers()) {
+            //     Console.WriteLine(superPower);
+            // }
+
+            // Console.WriteLine("Please enter the super power to be removed ");
+            // string sp = Console.ReadLine();
+            // obj.RemoveSuperPower(sp);
+
+            // foreach(var superPower in obj.GetSuperPowers()) {
+            //     Console.WriteLine(superPower);
+            // }
+            Console.WriteLine("Super Hero      Hideout");
+            foreach(var superHero in Hero.hideouts) {
+                Console.WriteLine($"{superHero.Key}      {superHero.Value}");
+            }
+            #endregion
 
         }
     }
