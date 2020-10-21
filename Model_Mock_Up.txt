@@ -1,0 +1,72 @@
+Model Mock Up - brewery store
+
+This Mock Up is in JSON Format with each value tailored to a SQL DB value. This to easily port to an entity relationship diagram in later projects. Each entity below will most likely be placed in separate files.
+{
+
+“beer”: {
+		beerid: (key) {
+			breweryid:  (Key) {
+			abv: FLOAT(4),
+			ibu: SMALLINT,
+			color: DOUBLE,
+			cost: FLOAT(4),
+			stock: INT,
+		},
+		...
+	
+                }
+
+“brewery”: {
+		beerid: (Foreign Key) {
+			breweryid: (Key) {
+				name: VARCHAR,
+				growler: BOOL,
+				crowler: BOOL,
+			}	
+		},
+		…
+	      }
+
+“location”: {
+		breweryid: (Foreign Key -> brewery) {
+			locationid: VARCHAR, (key)
+			street: VARCHAR,
+			city: VARCHAR,
+			state: VARCHAR,
+			zip:  MEDIUMINT,
+		},
+		…
+	      }
+
+
+
+“customer”: {
+		breweryid: (Foreign Key -> brewery) {
+			customerid: VARCHAR, (key)
+			fname: VARCHAR,
+			lname: VARCHAR,
+		},
+		…
+	
+	         }
+
+“order”: {
+		customerid:  (Foreign Key -> Customer) {
+			orderid: VARCHAR,  (key)
+			date: DATE,
+			cost: FLOAT(6),
+		},
+		…
+	
+	  }
+
+“orderhistory:” {
+			customerid:  (Foreign Key -> Customer) {
+				orderid: VARCHAR,  (key)
+				date: DATE,
+				cost: FLOAT(6),
+			},
+			…
+		  }
+
+}
