@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace herosLib
+namespace HerosLib
 {
     // default access modifier: internal
 
@@ -47,16 +47,25 @@ namespace herosLib
         #region 
         //public static List<string> superPowers = new List<string>();
 
-        //public static Stack<string> superPowers = new Stack<string>();
+        public static Stack<string> superPowers = new Stack<string>();
         public static Dictionary<string, string> hideouts = new Dictionary<string,string>();
         // public static Stack<string> GetSuperPowers() {
         //     return superPowers;
         // }
-        // public void RemoveSuperPower(string superPower) {
-        //     if(superPowers.Contains(superPower)) {
-        //         superPowers.Pop();
-        //     }
-        // }
+        public void RemoveSuperPower(string superPower) {
+            if(superPowers.Contains(superPower)) {
+                superPowers.Pop();
+            }
+        }
+
+        public void AddSuperPower(string superPower) {
+            if(superPower!= null && superPower!= "") {
+                superPowers.Push(superPower);
+            } else throw new ArgumentException("Super power shouldn't be null");
+        }
+
+        
+        
         #endregion
         public Hero() {
             // superPowers.Push("Strength");
@@ -67,6 +76,7 @@ namespace herosLib
             hideouts.Add("Batman", "Batcave");
             hideouts.Add("Superman", "Fortress Solitude");
         }
+        #endregion
     }
-    #endregion
+    
 }

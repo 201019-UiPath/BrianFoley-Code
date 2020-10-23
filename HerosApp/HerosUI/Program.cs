@@ -1,5 +1,6 @@
 ﻿using System;
-using herosLib;
+using HerosLib;
+using HerosUI.Menus;
 
 namespace herosUI
 {
@@ -10,16 +11,14 @@ namespace herosUI
             #region default constructor
             #endregion
             #region Parameterized constructor
-            /*
-            Hero obj = new Hero(1, "brian");
-            Console.WriteLine($"{obj.Id} {obj.name}");
+            
+            // Hero obj = new Hero(1, "brian");
+            // Console.WriteLine($"{obj.Id} {obj.name}");
             #endregion 
             #region access via properties
-            obj.Id = 2;
-            Console.WriteLine($"New Id = {obj.Id}");
-            */
+            // obj.Id = 2;
+            // Console.WriteLine($"New Id = {obj.Id}");
             #endregion
-
             #region Accessing 1-D Arrays
 
             Hero obj=new Hero();
@@ -52,7 +51,6 @@ namespace herosUI
             //      Console.WriteLine();
             // }
             #endregion
-
             #region collections
             
             // foreach(var superPower in obj.GetSuperPowers()) {
@@ -66,11 +64,41 @@ namespace herosUI
             // foreach(var superPower in obj.GetSuperPowers()) {
             //     Console.WriteLine(superPower);
             // }
-            Console.WriteLine("Super Hero      Hideout");
-            foreach(var superHero in Hero.hideouts) {
-                Console.WriteLine($"{superHero.Key}      {superHero.Value}");
-            }
             #endregion
+            #region traverse dictionary
+            // Console.WriteLine("Super Hero      Hideout");
+            // foreach(var superHero in Hero.hideouts) {
+            //     Console.WriteLine($"{superHero.Key}      {superHero.Value}");
+            // }
+            #endregion
+
+            #region Calling hero menu
+            IMenu startMenu = new MainMenu();
+            startMenu.Start();
+            #endregion
+
+            #region Delegate, Anonymous methods, Lambda
+            HeroTasks heroTasks=new HeroTasks();
+            
+            //HeroDel del=new HeroDel(heroTasks.GetPowers);
+            // Action del =new Action(heroTasks.GetPowers);
+            //Func<string, string> fd=new Func<string, string>(some method);
+            //Predicate<string> predicate=new Predicate<string>(some method);            
+            // del += heroTasks.DoWork; // += subscribe to a method
+            // del += heroTasks.ManageLife;
+            // del();
+            // del -= heroTasks.ManageLife; // unsubscribe 
+            // del();
+        
+            // Anonymous methods
+            // Action<string> am=delegate(string name){
+            //     Console.WriteLine($"Hello {name}");
+            // };
+            // am("Brian");
+            // Lambda expression - shorthand notations to anonymous methods
+            // Action result= ()=>Console.WriteLine("Hello Lambda");
+            // result();
+            #endregion 
 
         }
     }
